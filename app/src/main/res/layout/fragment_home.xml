@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/dp_15"
+
+                    android:background="@drawable/background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cursive"
+                    android:padding="@dimen/dp_15"
+
+                    android:text="One Stop solution"
+                    android:textSize="@dimen/dp_32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:padding="@dimen/dp_15"
+                    android:text="For your Semester Exam Preparation"
+                    android:textColor="#4361ee"
+                    android:textSize="@dimen/dp_25"
+
+                    android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="@dimen/dp_180"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:src="@drawable/tuimage">
+
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginTop="@dimen/dp_30">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginStart="@dimen/dp_60"
+                    android:layout_marginEnd="@dimen/dp_70"
+
+
+
+                    android:background="@drawable/backgroundtu"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/studymateerial"></LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="Study\nMaterials"
+                        android:textSize="@dimen/dp_20"
+                        android:layout_gravity="center"
+
+
+                        android:textColor="#fff">
+
+                    </Button>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_150"
+
+
+
+                    android:background="@drawable/backgroundtu1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_65"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/updateslogo"></LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="university\nUpdates"
+                        android:textSize="@dimen/dp_19"
+                        android:layout_gravity="center"
+
+                        android:textColor="#fff">
+
+                    </Button>
+                </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginStart="@dimen/dp_60"
+                    android:layout_marginTop="@dimen/dp_50"
+
+                    android:background="@drawable/backgroundtu2"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/pyq"></LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="Previous\nPaper"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/dp_20"
+
+                        android:textColor="#fff">
+
+                    </Button>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:layout_marginBottom="@dimen/dp_110"
+                    android:background="#e5b3fe"
+                   >
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_alignParentBottom="true"
+
+
+
+                    android:flipInterval="3000"
+                    android:autoStart="true"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                       android:background="@drawable/newslider"
+                        android:id="@+id/image2"
+                        android:alpha="0.9"
+
+
+
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/dp_10"
+                        android:textStyle="bold"
+                        android:text="Welcome to ExamPrep!\nYour one-stop solution for accessing previous year semester exam questions. Enhance your preparation with a comprehensive collection of past papers, designed to help you succeed.\nStart exploring now and ace your exams with confidence!"
+
+
+                        android:id="@+id/image1"
+                        android:background="@drawable/slider1"
+                        />
+
+                </ViewFlipper>
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

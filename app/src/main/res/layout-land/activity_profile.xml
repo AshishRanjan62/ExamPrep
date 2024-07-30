@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:padding="@dimen/dp_4"
+            android:layout_gravity="center"
+            android:fontFamily="@font/bungeespiceregular"
+            android:textSize="@dimen/dp_28"
+            android:textStyle="bold"
+            android:id="@+id/statusname"
+            android:layout_marginStart="@dimen/dp_30"/>
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_35"
+            android:layout_marginTop="@dimen/dp_9"
+            android:fontFamily="@font/robotoight"
+            android:maxLength="20"
+            android:text="AShish Ranjan"
+            android:textSize="@dimen/dp_25" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/dp_105"
+        android:layout_height="@dimen/dp_105"
+        app:cardCornerRadius="@dimen/dp_65"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_15">
+        <ImageView
+            android:id="@+id/ivimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete Your Profile"
+        android:textStyle="bold"
+        android:fontFamily="@font/playfairdsplayblack"
+        android:layout_marginStart="@dimen/dp_45"
+        android:textSize="@dimen/dp_32"
+        android:textColor="#0B0000"
+        android:layout_marginTop="@dimen/dp_25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="Name"
+            android:fontFamily="@font/arvoregular"
+            android:layout_marginStart="@dimen/dp_20"
+            android:padding="@dimen/dp_6"
+            android:textSize="@dimen/dp_22"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"
+            android:layout_marginStart="@dimen/dp_85"
+            android:layout_marginEnd="@dimen/dp_40"
+            app:cardCornerRadius="@dimen/dp_5"
+            app:contentPadding="@dimen/dp_2"
+            app:cardElevation="@dimen/dp_9">
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="Date Of Birth"
+            android:fontFamily="@font/arvoregular"
+            android:layout_marginStart="@dimen/dp_20"
+            android:padding="@dimen/dp_6"
+            android:textSize="@dimen/dp_22"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginEnd="@dimen/dp_30"
+            app:cardCornerRadius="@dimen/dp_4"
+            app:contentPadding="@dimen/dp_2"
+            app:cardElevation="@dimen/dp_9">
+
+            <Button
+                android:id="@+id/dateButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Date"
+                android:backgroundTint="@color/white"
+                android:textColor="#F7000000"
+                android:textSize="@dimen/dp_25"
+                android:gravity="left"
+                android:fontFamily="@font/robotoight"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="Contact No"
+            android:layout_marginStart="@dimen/dp_20"
+            android:fontFamily="@font/arvoregular"
+            android:padding="@dimen/dp_4"
+            android:textSize="@dimen/dp_22"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"
+            android:layout_marginStart="@dimen/dp_34"
+            android:layout_marginEnd="@dimen/dp_30"
+            app:cardCornerRadius="@dimen/dp_5"
+            app:contentPadding="@dimen/dp_2"
+            app:cardElevation="@dimen/dp_9">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:maxLength="10"
+                android:layout_marginStart="@dimen/dp_35"
+                android:textSize="@dimen/dp_25"
+
+                android:layout_marginEnd="@dimen/dp_25"
+                android:fontFamily="@font/robotoight"
+                android:inputType="number"
+                android:background="@null"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="Gender"
+            android:layout_marginStart="@dimen/dp_20"
+            android:fontFamily="@font/arvoregular"
+            android:padding="@dimen/dp_6"
+            android:textSize="@dimen/dp_22"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"
+            android:layout_marginStart="@dimen/dp_74"
+            android:layout_marginEnd="@dimen/dp_40"
+            app:cardCornerRadius="@dimen/dp_4"
+            app:contentPadding="@dimen/dp_2"
+            app:cardElevation="@dimen/dp_9">
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:padding="@dimen/dp_12"
+                android:layout_marginStart="@dimen/dp_7"
+                android:fontFamily="@font/robotoight"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_100">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_50"
+            android:layout_marginEnd="@dimen/dp_50"
+            android:backgroundTint="#630019FB"
+            android:text="Submit"
+            android:textSize="@dimen/dp_20"/>
+    </LinearLayout>
+</LinearLayout>
